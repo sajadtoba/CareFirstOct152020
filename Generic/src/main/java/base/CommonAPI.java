@@ -22,8 +22,8 @@ public class CommonAPI {
        // driver = new SafariDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 //        driver.get("https://www.amazon.com/");
-        //driver.get("https://www.staples.com/");
-        driver.navigate().to("https://www.cnn.com/");
+        driver.get("https://www.staples.com/");
+        //driver.navigate().to("https://www.cnn.com/");
     }
     @AfterMethod
     public void cleanUp(){

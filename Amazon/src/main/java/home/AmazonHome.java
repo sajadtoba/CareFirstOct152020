@@ -1,11 +1,13 @@
 package home;
 
+import base.BaseAPI;
 import base.CommonAPI;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 
-public class AmazonHome extends CommonAPI {
+//public class AmazonHome extends CommonAPI {
+public class AmazonHome extends BaseAPI {
     // How to write the test case?
     // It always starts with the test @Test annotation
     //It will void
