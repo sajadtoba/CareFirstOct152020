@@ -6,7 +6,7 @@ import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.List;
-//public class Staples extends CommonAPI {
+
 public class Staples extends BaseAPI {
     @Test
     public void testSearchOfficeItems() {

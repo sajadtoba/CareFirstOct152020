@@ -29,45 +29,38 @@
             <scope>compile</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.7.0</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M3</version>
+                <configuration>
+                    <!--                    <suiteXmlFiles>-->
+                    <!--                        <suiteXmlFiles>target/test-classes/AmazonTestRunner.xml</suiteXmlFiles>-->
+                    <!--                    </suiteXmlFiles>-->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
-
-<!-- I have only 4 dependencies 1)selenium-server 2) selenium-java 3) testng 4) testng with scope compile-->
-
-
-
-
-
-
-
-
-<!--    <build>-->
-<!--        <plugins>-->
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-compiler-plugin</artifactId>-->
-<!--                <version>3.7.0</version>-->
-<!--                <configuration>-->
-<!--                    <source>1.8</source>-->
-<!--                    <target>1.8</target>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-surefire-plugin</artifactId>-->
-<!--                <version>3.0.0-M3</version>-->
-<!--                <configuration>-->
-<!--                    &lt;!&ndash;                    <suiteXmlFiles>&ndash;&gt;-->
-<!--                    &lt;!&ndash;                        <suiteXmlFiles>target/test-classes/AmazonTestRunner.xml</suiteXmlFiles>&ndash;&gt;-->
-<!--                    &lt;!&ndash;                    </suiteXmlFiles>&ndash;&gt;-->
-<!--                </configuration>-->
-<!--            </plugin>-->
-<!--        </plugins>-->
-<!--    </build>-->
 
 
 
 <!--I have only 3 Dependencies without versions 1) selenium-server 2)selenium-java 3) testng-->
 <!-- As we set up the CommonAPI testng annotation then we added one more dependency is called testng compile-->
 
+ <!-- I have only 4 dependencies 1)selenium-server 2) selenium-java 3) testng 4) testng with scope compile-->
+        <!--Step3) Add the plugins Mr.Mafi video starts 2:05-->
 <!-- we have build after the dependencies
 plugins It has 2 plugins  1) maven-compiler-plugin 2) maven-surefire-plugin      then we have configuration-->

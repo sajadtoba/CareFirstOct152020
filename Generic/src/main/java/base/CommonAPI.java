@@ -32,6 +32,26 @@ public class CommonAPI {
                         // FirefoxDriver is get quit so quick and it does not like too.
     }
 
+    //******************************** 3 simple and Common Methods  but only work with findby id
+    // Below 3 methods I can use any module class if I have these 3 methods in my CommonAPI
+    // But if i have only this class then I will not able to use in other class at least I can extends with this calss
+    // the methods can be called but better save inside the CommonAPI.
+    public void typeAndClickOnElement(String locator, String value){
+        driver.findElement(By.id(locator)).sendKeys(value);
+    }
+    public void clearFieldForNextItem(String locator){
+        driver.findElement(By.id(locator)).clear();
+    }
+    // this is also commonAPI method we can use any method but the condition the locator type must by id
+    public void clickOnElement2(String locator){
+        driver.findElement(By.id(locator)).click();
+    }
+
+    //*************************************************************************************
+
+
+
+
     public void clearField(String locator){
         try {
             driver.findElement(By.cssSelector(locator)).clear();
@@ -152,6 +172,7 @@ public class CommonAPI {
 
         }
     }
+
 
 
 
